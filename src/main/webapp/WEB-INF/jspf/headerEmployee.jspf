@@ -1,0 +1,42 @@
+<header>
+	<div>
+		<%--        begin navbar --%>
+		<nav class="navbar navbar-expand-md navbar-light">
+			<%--            Hier alle nagivatie links die nodig zijn op deze view--%>
+			<a href="/home" class="navbar-brand">
+				<img src="../../../../images/logoGBBC.png" alt="logoGBBC" width="50" height="50"
+				     class="d-inline-block align-text-bottom"/>
+				Gold Bar Banking Co</a>
+			<button class="navbar-toggler"
+			        type="button"
+			        data-bs-toggle="collapse"
+			        data-bs-target="#toggleMenu"
+			        aria-controls="toggleMenu"
+			        aria-expanded="false"
+			        aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="toggleMenu">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li><a class="nav-item" href="/home">Home</a></li>
+					<li><a class="nav-item" href="https://goo.gl/maps/i1WJAbktm4S3RDYa9" target="_blank">IT Helpdesk</a></li>
+				</ul>
+			</div>
+				<%--@elvariable id="userSession" type="com"--%>
+				<c:choose>
+				<c:when test="${empty userSession}">
+				<a href="/login">
+					<button class="btn btn-outline-success" type="button">Inloggen</button>
+				</a>
+				</c:when>
+				<c:otherwise>
+				<a href="/logOut">
+					<button class="btn btn-outline-success" type="button">Uitloggen</button>
+				</a>
+				</c:otherwise>
+				</c:choose>
+	</div>
+	</nav>
+	</div>
+	<!-- einde navbar -->
+</header>

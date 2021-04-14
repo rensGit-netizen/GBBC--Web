@@ -1,0 +1,70 @@
+th{
+    position: sticky;
+    top: 0;
+    background: #ffc300 !important;
+    box-shadow: 0 2px 2px -1px
+    rgba(0, 0, 0, 0.4);
+}
+.table-fixed tbody {
+    height: 400px;
+    overflow-y: auto;
+    width: 800px;
+}
+
+
+thead{
+    background-color: #ffc300;
+}
+
+
+.addbutton{
+    font-weight: bold;
+    width: 125px;
+}
+
+.keuzebuttons{
+    width: 800px;
+    margin: auto
+}
+
+.datatable {
+    text-align: left;
+    position: relative;
+    margin: auto auto;
+    margin-bottom: 100px;
+    width: 1000px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.sectordatatable{
+    text-align: left;
+    position: relative;
+    margin: auto auto 100px;
+    max-width: 1000px !important;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.datatable::-webkit-scrollbar{
+    background-color: #e29b31;
+}
+
+.datatable::-webkit-scrollbar {
+    width: 10px;
+}
+
+.datatable::-webkit-scrollbar-track {
+    background: #ffffb2;
+}
+
+
+.datatable::-webkit-scrollbar-thumb {
+    background: #fcc332;
+}
+
+
+.datatable::-webkit-scrollbar-thumb:hover {
+    background: #f3cb52;
+}
+

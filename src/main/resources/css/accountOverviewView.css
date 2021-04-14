@@ -1,0 +1,169 @@
+.bankrekeningoverzicht {
+    margin: auto;
+    position: relative;
+
+    width: 550px;
+    height: 425px;
+    overflow-y: auto !important;
+    display: grid;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+    /* OOK MOOI ALS DEZE UIT STAAT: */
+    justify-content: center;
+
+}
+
+
+.overzicht {
+    /*color: red;*/
+    color: #1b4332;
+    margin: auto;
+    text-align: center;
+    padding-top: 5px;
+}
+
+a:link{
+    /*color: red;*/
+    color: #1b4332 !important;
+    text-decoration: none !important;
+    /*background-color: inherit ;*/
+}
+
+.rekening {
+    border-style: solid;
+    border-color: #f3d350;
+    border-radius: 4px;
+    width: 525px;
+    margin: 0 auto;
+    position: relative;
+
+    padding: 10px;
+
+    /*color:red;*/
+    color: #1b4332 !important;
+    text-decoration: none !important;
+    background-color: inherit ;
+}
+
+.typeEnSaldo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+
+    /* HOOGTE en UITLIJNING (m.n. links) NOG AANPASSEN */
+    height: auto;
+    padding: -10px;
+
+    /* DEZE CODE IS OM HET BLOK BETER TE ZIEN, DAT IS
+       HANDIG BIJ HET ONTWERPEN (daarna uit-commentariëren): */
+    /*border-style: dashed;*/
+    /*border-color: black;*/
+    /*border-radius: 10px;*/
+    /*border-width: 0.2px;*/
+}
+.koppelen{
+    width: 520px;
+    margin: auto;
+}
+
+form .submit{
+    width: 40%;
+    height: 45px;
+    position: relative;
+    /*left: 10%;*/
+    margin-bottom: 25px;
+    /*color: black;*/
+    /*font-weight: bold;*/
+    /*border-style: none;*/
+    /*border-radius: 4px;*/
+    /*background-color: #f0bd39;*/
+
+}
+
+form .uitloggen{
+    width: 50%;
+    height: 45px;
+    position: relative;
+    left: 10%;
+    margin-bottom: 25px;
+    /*color: black;*/
+    /*font-weight: bold;*/
+    /*border-style: none;*/
+    /*border-radius: 4px;*/
+    /*background-color: #f6dd78;*/
+}
+
+form .annuleren{
+    width: 50%;
+    height: 45px;
+    position: relative;
+    left: 10%;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    /*color: black;*/
+    /*font-weight: bold;*/
+    /*border-style: none;*/
+    /*border-radius: 4px;*/
+    /*background-color: #f6dd78;*/
+}
+
+
+.type {
+    color: mediumaquamarine;
+    /*color: #1b4332;*/
+}
+
+.saldo {
+    color: mediumaquamarine;
+    /*color: #1b4332;*/
+    text-align: right;
+}
+
+/*.koppelen {*/
+/*    width: 200px;*/
+/*    height: 45px;*/
+/*    position: relative;*/
+/*    left: 1%;*/
+
+/*    color: #1b4332;*/
+/*    border-style: none;*/
+/*    border-radius: 4px;*/
+/*    background-color: #f0bd39;*/
+/*}*/
+
+/*.uitloggen {*/
+/*    width: 100px;*/
+/*    height: 45px;*/
+/*    !*position: relative;*!*/
+/*    !*left: 35%;*!*/
+
+
+/*    color: #1b4332;*/
+/*    border-style: none;*/
+/*    border-radius: 4px;*/
+/*    background-color: #f6dd78;*/
+/*}*/
+
+.bankrekeningoverzicht::-webkit-scrollbar{
+    background-color: #e29b31;
+}
+
+.bankrekeningoverzicht::-webkit-scrollbar {
+    width: 10px;
+}
+
+.bankrekeningoverzicht::-webkit-scrollbar-track {
+    background: #ffffb2;
+}
+
+
+.bankrekeningoverzicht::-webkit-scrollbar-thumb {
+    background: #fcc332;
+}
+
+
+.bankrekeningoverzicht::-webkit-scrollbar-thumb:hover {
+    background: #f3cb52;
+}
+

@@ -1,0 +1,139 @@
+.displaytable {
+    width: 1000px;
+    margin: 0 auto 230px;
+    height: 215px;
+    border: 2px;
+}
+
+.headGrid{
+    width: 1000px;
+    margin: auto;
+    padding: 10px 10px 105px;
+    height: 150px;
+    border-collapse: collapse;
+    border: 3px solid #ffc300;
+    border-bottom-width: 0;
+    border-radius: 4px 4px 0 0;
+    background-color: #ffc300;
+}
+
+.modal-header{
+    background: #1b4332;
+    color: white;
+}
+
+.geld {
+    background-color: #1b4332;
+    border-color: #1b4332;
+    margin-top: auto;
+}
+
+.displaytable .headText{
+    display: grid;
+    grid-template-columns: auto;
+    width: auto;
+    top: 0;
+    text-align: left;
+}
+
+h3{
+    color: #1b4332;
+}
+
+h4{
+    margin-top: 6px;
+    color: #1b4332;
+}
+
+.displaytable .centerTextleft{
+    text-align: left;
+    display: grid;
+    grid-template-columns: 0.5fr 1.2fr 0.6fr 0.3fr;
+    width: auto;
+    padding-left: 5px;
+    margin-top: 15px;
+}
+
+.displaytable .centerTextleft .imageSize{
+    display: block;
+    margin: 50px;
+    border-radius:4px;
+    width: 150px;
+}
+
+.textTable{
+    float: bottom;
+    overflow: auto;
+    background-color: #fff5e3;
+    height: 150%;
+    width: 1000px;
+    border-collapse: collapse;
+    border-radius: 0 0 4px 4px;
+    border: 3px solid #ffc300;
+    padding: 8px;
+    padding-top: 15px;
+}
+
+.keuzebuttons{
+    width: 1000px;
+    display: flex;
+    margin: 15px auto 100px;
+    justify-content: space-between;
+}
+
+.koppelen{
+    width: auto;
+    position: relative;
+    left: 0;
+    margin-bottom: 25px;
+}
+
+.overzicht {
+    width: auto;
+    position: relative;
+    right: 0;
+    margin-bottom: 40px;
+}
+
+.textGrid{
+    display: grid;
+    grid-template-columns: 0.5fr 1.2fr 0.6fr 0.3fr;
+    height: 30px;
+    grid-row-gap: 5px;
+}
+
+.textGrid .textAllignLeft{
+    text-align: left;
+    padding-left: 15px;
+}
+
+.textGrid .textAllignRight{
+    text-align: right;
+}
+
+.textGrid .textAllignCenter{
+    text-align: center;
+}
+
+
+.textTable::-webkit-scrollbar{
+    background-color: #e29b31;
+}
+
+.textTable::-webkit-scrollbar {
+    width: 10px;
+}
+
+.textTable::-webkit-scrollbar-track {
+    background: #ffffb2;
+}
+
+
+.textTable::-webkit-scrollbar-thumb {
+    background: #fcc332;
+}
+
+
+.textTable::-webkit-scrollbar-thumb:hover {
+    background: #f3cb52;
+}

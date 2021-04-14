@@ -1,0 +1,35 @@
+POST http://localhost:8080/api/saldo
+Content-Type: application/json
+
+{"creditBankAcc": "1395419486",
+  "debetBankAcc": "4783193092",
+  "amount": "200",
+  "description": "Rens WortelPaleis",
+  "pincodeDebetAcc": "5551"
+}
+
+###
+### check of username bestaat in de database
+POST http://localhost:8080/api/check-username
+Content-Type: application/json
+
+{"username": "mj.moshiri@hacker.nl"}
+
+### vraag company naam bij rekeningnummer
+POST http://localhost:8080/api/check-company
+Content-Type: application/json
+
+{"accountNr": "5134143297"}
+
+
+
+### checken op valid combi van iban + koppelcode
+POST http://localhost:8080/api/validate-code
+Content-Type: application/json
+
+{"iban": "3435181545",
+  "code": "19889"}
+
+
+### dit is een test website met data
+OPTIONS https://reqres.in/api/users

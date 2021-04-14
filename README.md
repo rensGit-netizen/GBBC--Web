@@ -1,1 +1,3 @@
-# Refactor
+# GoldStarBankingCo
+
+Bank money transfer application

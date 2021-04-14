@@ -1,0 +1,80 @@
+.inlogPanel{
+    width: 550px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -20px;
+    margin-bottom: 100px;
+}
+
+#warningText{
+    color: gold;
+}
+
+
+form {
+    text-align: left;
+    border-style: solid;
+    border-color: #ffc300;
+    border-radius: 4px;
+    padding: 25px;
+    width: 500px;
+    height: auto;
+}
+
+form h2{
+    text-align: center;
+}
+
+.headimage{
+    position: relative;
+    left: 33%;
+}
+.picture{
+    width: 25%;
+    border-radius: 100%;
+}
+
+form .field{
+    width: 95%;
+    color: black;
+}
+
+form .submit{
+    width: 40%;
+    height: 45px;
+    position: relative;
+    left: 10%;
+    margin-bottom: 25px;
+    /*color: black;*/
+    /*font-weight: bold;*/
+    /*border-style: none;*/
+    /*border-radius: 4px;*/
+    /*background-color: #f0bd39;*/
+
+}
+
+form .wachtwoordvergeten{
+    width: 50%;
+    height: 45px;
+    position: relative;
+    margin-bottom: 25px;
+    /*color: black;*/
+    /*font-weight: bold;*/
+    /*border-style: none;*/
+    /*border-radius: 4px;*/
+    /*background-color: #f6dd78;*/
+}
+
+form .annuleren{
+    width: 50%;
+    height: 45px;
+    position: relative;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    /*color: black;*/
+    /*font-weight: bold;*/
+    /*border-style: none;*/
+    /*border-radius: 4px;*/
+    /*background-color: #f6dd78;*/
+}

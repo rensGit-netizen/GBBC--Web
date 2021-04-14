@@ -1,0 +1,70 @@
+<META NAME="author" CONTENT="Emily">
+<body>
+<div class="modal" id="myModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form:form action="/person-authorization" method="post" modelAttribute="authorizePerson">
+				<div class="modal-header">
+					<h5 class="modal-title">Iemand uw rekening laten machtigen?</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+					<div class="mb-3">
+						<label class="form-label required">Rekeningnummer</label>
+						<form:input type="text"
+						            value="${selectedIban}"
+						            disabled="false"
+						            class="form-control"
+						            path="iban"/>
+					</div>
+
+					<div class="mb-3">
+						<label class="form-label required">E-mailadres gemachtigde</label>
+						<form:input id="customerEmail"
+						            type="text"
+						            class="form-control"
+						            placeholder="E-mailadres"
+						            onclick="isEmpty(this)"
+						            path="user_name"/>
+					</div>
+
+					<div class="row g-2">
+						<div class="col-md-6">
+							<label class="form-label">Voornaam</label>
+							<form:input type="text"
+							            class="form-control"
+							            placeholder="Voornaam"
+							            onfocusout="isEmpty(this)"
+							            path="first_name"/>
+						</div>
+						<div class="col-md-6">
+							<label class="form-label">Achternaam</label>
+							<form:input type="text"
+							            class="form-control"
+							            placeholder="Achternaam"
+							            onfocusout="isEmpty(this)"
+							            path="last_name"/>
+						</div>
+					</div>
+
+					<div class="mb-3">
+						<label class="form-label required">Wachtwoord</label>
+						<form:input type="password"
+						            class="form-control"
+						            placeholder="Wachtwoord"
+						            onclick="isEmpty(this)"
+						            path="password"/>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit"
+					        style="font-weight: bold"
+					        class="btn btn-outline-success">Machtigen</button>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuleren</button>
+				</div>
+			</form:form>
+		</div>
+	</div>
+</div>
+</body>
+

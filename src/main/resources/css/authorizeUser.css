@@ -1,0 +1,49 @@
+form {
+    text-align: left;
+    border-style: solid;
+    border-color: #ffc300;
+    border-radius: 4px;
+    padding: 10px 40px 10px 40px;
+    width: 550px;
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+section{
+    margin: 12px;
+}
+
+.headimage{
+    position: relative;
+    left: 33%;
+    margin: 20px;
+}
+.picture{
+    width: 35%;
+    border-radius: 100%;
+}
+
+form h3{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .submit{
+    width: 40%;
+    height: 45px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+form .annuleren{
+    width: 40%;
+    height: 45px;
+    position: relative;
+    left: 19%;
+    margin-bottom: 25px;
+}
+
+label{
+    margin-top: 7px;
+}

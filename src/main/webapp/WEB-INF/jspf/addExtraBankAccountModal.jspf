@@ -1,0 +1,79 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<body>
+<div class="modal" id="addAccountModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form:form action="/extra-account-created" method="post" modelAttribute="openAccount">
+				<div class="modal-header">
+					<h5 class="modal-title">Open een extra rekening</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+
+					<h4>Soort Rekening</h4>
+					<div class="form-check form-check-inline">
+						<form:radiobutton class="form-check-input"
+						                  name="flexRadioDefault"
+						                  id="flexRadioDefault1"
+						                  path="customer_type"
+						                  onclick="disablePrivateFields()"
+						                  value="Particulier"
+						                  checked="checked"/>
+						<label class="form-check-label ">Particulier</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<form:radiobutton class="form-check-input"
+						                  name="flexRadioDefault"
+						                  id="flexRadioDefault2"
+						                  path="customer_type"
+						                  onclick="enablePrivateFields()"
+						                  value="Zakelijk"/>
+						<label class="form-check-label">Zakelijk</label>
+					</div>
+					<fieldset>
+						<div class="col-md-12">
+							<label class="form-label">Bedrijfsnaam</label>
+							<form:input id="companyName"
+							            type="text"
+							            class="form-control"
+							            placeholder="Bedrijfsnaam"
+							            path="title"
+							            disabled="true"/>
+						</div>
+						<div class="col-md-12">
+							<label class="form-label">Sector</label>
+							<form:input id="companySector"
+							            type="text"
+							            class="form-control"
+							            placeholder="Sector"
+							            path="sector"
+							            disabled="true"/>
+						</div>
+					</fieldset>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox">
+						<label class="form-check-label">
+							Akkoord met de <a href="http://www.google.com">algemene voorwaarden</a>
+						</label>
+						<br><br>
+
+				</div>
+				<div class="modal-footer">
+<%--					<button type="submit"--%>
+<%--					        class="laatgeldzien btn btn-warning submit"--%>
+<%--					        style="font-weight: bold"--%>
+<%--					        id="btnsubmit">--%>
+<%--						Meldt u nu aan!--%>
+<%--					</button>--%>
+					<button type="submit"
+					        style="font-weight: bold"
+					        class="btn btn-outline-success"
+					        id="btnsubmit">Open Nieuwe Account!</button>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuleren</button>
+				</div>
+			</form:form>
+		</div>
+	</div>
+</div>
+
+</div>

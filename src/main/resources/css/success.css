@@ -1,0 +1,38 @@
+h4{
+    text-align: center;
+}
+
+.accountinfo{
+    text-align: left;
+    border-style: solid;
+    border-color: #ffc300;
+    border-radius: 4px;
+    position: relative;
+    padding: 10px 40px 10px 40px;
+    margin: auto auto 25px;
+    height: 620px;
+    width: 650px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.headimage{
+    position: relative;
+    left: 30%;
+    margin: 20px;
+}
+.picture{
+    width: 35%;
+    border-radius: 100%;
+}
+
+.text-center,
+.laatgeldzien,
+.btn,
+.btn-warning{
+margin-bottom: 5px;
+}
